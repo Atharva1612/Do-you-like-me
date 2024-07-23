@@ -16,9 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         showPopup("Thanks for Accepting");
     });
 
-    noButton.addEventListener("click", function() {
-        showPopup("Ungli hai kya BSDK");
-    });
 
     noButton.addEventListener("mouseenter", function() {
         const x = Math.random() * (window.innerWidth - 200); // Adjusted for button size
