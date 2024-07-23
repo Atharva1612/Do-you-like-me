@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    max-width: 80%; /* Adjust maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%; /* Full width */
+    max-width: 200px; /* Maximum width for buttons */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Adjust maximum width */
+    width: 300px; /* Fixed width for popup */
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    .popup {
+        width: 250px; /* Adjust width for smaller screens */
+    }
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Do you like me?</h1>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <span id="popupMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
